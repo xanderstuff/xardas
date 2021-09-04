@@ -37,6 +37,11 @@ full_name = {
     'pt': 'Pint [US]',
     'qt': 'Quart [US]',
     'gal': 'Gallon [US]',
+
+    # temperature
+    '°F': 'Degrees Fahrenheit',
+    '°C': 'Degrees Celsius',
+    '°K': 'Degrees Kelvin'
 }
 
 to_si = {
