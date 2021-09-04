@@ -162,7 +162,7 @@ class Convert(Cog):
             if c in string.digits:
                 val += c
             else:
-                unit = value[i:]
+                unit = value[i:].lower()
                 break
 
         if unit is None:
@@ -182,7 +182,7 @@ class Convert(Cog):
 
         try:
             cv_to_m = to_si[from_unit]
-            cv_from_m = from_si[other]
+            cv_from_m = from_si[other.lower()]
         except KeyError as e:
             await ctx.reply(embed=Embed(title=':x: Unsupported Unit',
                                         description=f'Unit **{e}** is not supported. Check _!cvlist_'))
