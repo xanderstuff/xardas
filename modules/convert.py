@@ -39,9 +39,9 @@ full_name = {
     'gal': 'Gallon [US]',
 
     # temperature
-    '°F': 'Degrees Fahrenheit',
-    '°C': 'Degrees Celsius',
-    '°K': 'Degrees Kelvin'
+    'F': 'Degrees Fahrenheit',
+    'C': 'Degrees Celsius',
+    'K': 'Degrees Kelvin'
 }
 
 to_si = {
@@ -78,9 +78,9 @@ to_si = {
     'gal': lambda x: x * 3.7854,
 
     # temperature
-    '°f': lambda x: (x - 32) / 1.8 + 273.15,
-    '°k': lambda x: x,
-    '°c': lambda x: x + 273.15,
+    'f': lambda x: (x - 32) / 1.8 + 273.15,
+    'k': lambda x: x,
+    'c': lambda x: x + 273.15,
 }
 
 from_si = {
@@ -117,9 +117,9 @@ from_si = {
     'gal': lambda x: x / 3.7854,
 
     # temperature
-    '°f': lambda x: x * 1.8 - 459.67,
-    '°k': lambda x: x,
-    '°c': lambda x: x - 273.15,
+    'f': lambda x: x * 1.8 - 459.67,
+    'k': lambda x: x,
+    'c': lambda x: x - 273.15,
 }
 
 
