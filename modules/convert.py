@@ -71,6 +71,11 @@ to_si = {
     'pt': lambda x: x * 0.473175,
     'qt': lambda x: x * 0.94635,
     'gal': lambda x: x * 3.7854,
+
+    # temperature
+    '°f': lambda x: (x - 32) / 1.8 + 273.15,
+    '°k': lambda x: x,
+    '°c': lambda x: x + 273.15,
 }
 
 from_si = {
@@ -105,6 +110,11 @@ from_si = {
     'pt': lambda x: x / 0.473175,
     'qt': lambda x: x / 0.94635,
     'gal': lambda x: x / 3.7854,
+
+    # temperature
+    '°f': lambda x: x * 1.8 - 459.67,
+    '°k': lambda x: x,
+    '°c': lambda x: x - 273.15,
 }
 
 
