@@ -75,7 +75,7 @@ class XardasBuiltin(Cog):
     async def info(self, ctx: SlashContext):
         embed = Embed(title='About Me',
                       description='Hey there, I\'m _Xardas_ and I was written by <@686669430930931791>.\n'
-                                  '» GitHub ')
+                                  '» **GitHub:** https://github.com/lmichaelis/xardas')
         await ctx.reply(embed=embed)
 
 
