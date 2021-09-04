@@ -57,7 +57,11 @@ class DnD(Cog):
 
         summed = sum(rolls)
 
-        rolls_str = ", ".join([f'**{x}**' for x in rolls[:-1]]) + f', and **{rolls[-1]}**'
+        if len(rolls) > 1:
+            rolls_str = ", ".join([f'**{x}**' for x in rolls[:-1]]) + f', and **{rolls[-1]}**'
+        else:
+            rolls_str = f'**{rolls[0]}**'
+
         embed = Embed(title=f'{ctx.author.display_name}\'s Roll',
                       description=f'You rolled:\n\n» {rolls_str}\n_Sum:_ **{summed}**')
 
